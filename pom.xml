@@ -15,4 +15,18 @@
         <version>1.0.0-SNAPSHOT</version>
     </parent>
 
+    <repositories>
+        <repository>
+            <id>citeck-public</id>
+            <url>http://nexus.citeck.ru/repository/maven-public</url>
+        </repository>
+    </repositories>
+
+    <pluginRepositories>
+        <pluginRepository>
+            <id>citeck-plugin-public</id>
+            <url>http://nexus.citeck.ru/repository/maven-public</url>
+        </pluginRepository>
+    </pluginRepositories>
+
 </project>
