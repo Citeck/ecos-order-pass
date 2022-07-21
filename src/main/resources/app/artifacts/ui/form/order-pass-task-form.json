@@ -8,7 +8,14 @@
   "customModule": null,
   "typeRef": "",
   "width": "lg",
-  "i18n": {},
+  "i18n": {
+    "ru": {
+      "commentError": "При отказе поле обязательно к заполнению"
+    },
+    "en": {
+      "commentError": "Field is required when rejection"
+    }
+  },
   "definition": {
     "components": [
       {
@@ -19,8 +26,9 @@
         "key": "comment",
         "validate": {
           "required": true,
-          "customMessage": "При отказе поле обязательно к заполнению"
+          "customMessage": "commentError"
         },
+        "clearOnHide": false,
         "defaultValue": "",
         "refreshOn": [],
         "optionalWhenDisabled": false,
