@@ -19,6 +19,12 @@ model:
         en: Clerk
       assignees:
         - GROUP_company_clerks
+    - id: initiator
+      name:
+        ru: Инициатор
+        en: Initiator
+      attributes:
+        - initiator
   statuses:
     - id: order_pass
       name:
@@ -62,7 +68,7 @@ model:
       name:
         en: Initiator
         ru: Инициатор
-      type: ASSOC
+      type: PERSON
       config:
         typeRef: emodel/type@person
     - id: regNumber

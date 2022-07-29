@@ -1,0 +1,110 @@
+{
+  "id": "eb409025-e5d7-43fc-b7ab-ad9bd98d0dd9",
+  "typeRef": "emodel/type@order-pass",
+  "permissions": {
+    "matrix": {
+      "clerk": {
+        "order_pass": "READ",
+        "order_confirmed": "READ",
+        "order_rejected": "READ"
+      },
+      "initiator": {
+        "order_pass": "WRITE",
+        "order_confirmed": "READ",
+        "order_rejected": "READ"
+      }
+    }
+  },
+  "attributes": {
+    "visitorFullName": {
+      "matrix": {
+        "clerk": {
+          "order_pass": "READ",
+          "order_confirmed": "READ",
+          "order_rejected": "READ"
+        },
+        "initiator": {
+          "order_pass": "WRITE",
+          "order_confirmed": "READ",
+          "order_rejected": "READ"
+        }
+      },
+      "rules": []
+    },
+    "visitorOrganization": {
+      "matrix": {
+        "clerk": {
+          "order_pass": "READ",
+          "order_confirmed": "READ",
+          "order_rejected": "READ"
+        },
+        "initiator": {
+          "order_pass": "WRITE",
+          "order_confirmed": "READ",
+          "order_rejected": "READ"
+        }
+      },
+      "rules": []
+    },
+    "visitingDate": {
+      "matrix": {
+        "clerk": {
+          "order_pass": "READ",
+          "order_confirmed": "READ",
+          "order_rejected": "READ"
+        },
+        "initiator": {
+          "order_pass": "WRITE",
+          "order_confirmed": "READ",
+          "order_rejected": "READ"
+        }
+      },
+      "rules": []
+    },
+    "carBrandAndNumber": {
+      "matrix": {
+        "clerk": {
+          "order_pass": "READ",
+          "order_confirmed": "READ",
+          "order_rejected": "READ"
+        },
+        "initiator": {
+          "order_pass": "WRITE",
+          "order_confirmed": "READ",
+          "order_rejected": "READ"
+        }
+      },
+      "rules": []
+    },
+    "visitorDocument": {
+      "matrix": {
+        "clerk": {
+          "order_pass": "READ",
+          "order_confirmed": "READ",
+          "order_rejected": "READ"
+        },
+        "initiator": {
+          "order_pass": "WRITE",
+          "order_confirmed": "READ",
+          "order_rejected": "READ"
+        }
+      },
+      "rules": []
+    },
+    "initiatorDepartment": {
+      "matrix": {
+        "clerk": {
+          "order_pass": "READ",
+          "order_confirmed": "READ",
+          "order_rejected": "READ"
+        },
+        "initiator": {
+          "order_pass": "WRITE",
+          "order_confirmed": "READ",
+          "order_rejected": "READ"
+        }
+      },
+      "rules": []
+    }
+  }
+}
