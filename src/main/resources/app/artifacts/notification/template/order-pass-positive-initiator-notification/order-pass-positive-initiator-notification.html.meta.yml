@@ -1,0 +1,16 @@
+{
+  "id" : "order-pass-positive-initiator-notification",
+  "name" : "Order Pass Positive Initiator Notification",
+  "notificationTitle" : {
+    "ru" : "Результат исполнения задачи: Заказ пропуска, документ - ${title}",
+    "en" : "Result of task execution: Pass ordering, document - ${title}"
+  },
+  "tags" : [ ],
+  "model" : {
+    "date" : "$now?str",
+    "documentId" : "?id",
+    "web_url" : "?disp",
+    "title" : "?disp"
+  },
+  "multiTemplateConfig" : [ ]
+}

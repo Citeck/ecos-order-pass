@@ -8,12 +8,15 @@
   "customModule": null,
   "typeRef": "",
   "width": "lg",
+  "system": false,
   "i18n": {
     "ru": {
-      "create": "Создать"
+      "create": "Создать",
+      "errorDate": "Указана прошедшая дата"
     },
     "en": {
-      "create": "Create"
+      "create": "Create",
+      "errorDate": "Past date inserted"
     }
   },
   "definition": {
@@ -46,7 +49,8 @@
                 },
                 "key": "visitingDate",
                 "validate": {
-                  "required": true
+                  "required": true,
+                  "custom": "const visitingDate = _.get(data, 'visitingDate', '');\nconst formMode = _.get(instance, 'options.formMode', '');\n\nvar dateToSet = new Date(visitingDate);\ndateToSet.setHours(0, 0, 0, 0);\nvar dateCurrent = new Date();\ndateCurrent.setHours(0, 0, 0, 0);\n\nvalid = !(formMode == 'CREATE' && moment(dateToSet).isBefore(dateCurrent))\n? true : 'errorDate';"
                 },
                 "format": "dd.MM.yyyy",
                 "datePicker": {
@@ -168,14 +172,15 @@
                 "key": "cancel",
                 "action": "event",
                 "state": "",
+                "showValidations": false,
+                "event": "cancel",
+                "removeIndents": true,
                 "block": true,
                 "clearOnHide": false,
                 "refreshOn": [],
                 "optionalWhenDisabled": false,
                 "type": "button",
-                "input": true,
-                "showValidations": false,
-                "event": "cancel"
+                "input": true
               }
             ],
             "type": "column",

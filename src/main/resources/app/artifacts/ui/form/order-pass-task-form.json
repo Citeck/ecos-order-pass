@@ -8,6 +8,7 @@
   "customModule": null,
   "typeRef": "",
   "width": "lg",
+  "system": false,
   "i18n": {
     "ru": {
       "commentError": "При отказе поле обязательно к заполнению"
@@ -42,23 +43,7 @@
         "key": "columns",
         "columns": [
           {
-            "components": [
-              {
-                "label": {
-                  "ru": "В пропуске отказано",
-                  "en": "Reject"
-                },
-                "key": "outcome_rejected",
-                "state": "",
-                "theme": "primary",
-                "block": true,
-                "clearOnHide": false,
-                "refreshOn": [],
-                "optionalWhenDisabled": false,
-                "type": "button",
-                "input": true
-              }
-            ],
+            "components": [],
             "type": "column",
             "input": false,
             "key": "column",
@@ -70,11 +55,42 @@
             "type": "column",
             "input": false,
             "key": "column",
+            "components": [],
+            "md": 3
+          },
+          {
+            "index": 2,
+            "type": "column",
+            "input": false,
+            "key": "column",
             "components": [
               {
                 "label": {
-                  "ru": "Пропуск заказан",
-                  "en": "Order pass"
+                  "ru": "Отказать",
+                  "en": "Reject"
+                },
+                "key": "outcome_rejected",
+                "state": "",
+                "block": true,
+                "clearOnHide": false,
+                "refreshOn": [],
+                "optionalWhenDisabled": false,
+                "type": "button",
+                "input": true
+              }
+            ],
+            "md": 3
+          },
+          {
+            "index": 3,
+            "type": "column",
+            "input": false,
+            "key": "column",
+            "components": [
+              {
+                "label": {
+                  "en": "Confirm",
+                  "ru": "Оформить"
                 },
                 "key": "outcome_confirmed",
                 "state": "draft",
@@ -88,22 +104,6 @@
                 "input": true
               }
             ],
-            "md": 3
-          },
-          {
-            "index": 2,
-            "type": "column",
-            "input": false,
-            "key": "column",
-            "components": [],
-            "md": 3
-          },
-          {
-            "index": 3,
-            "type": "column",
-            "input": false,
-            "key": "column",
-            "components": [],
             "md": 3
           }
         ],
