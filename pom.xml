@@ -25,7 +25,7 @@
     <pluginRepositories>
         <pluginRepository>
             <id>citeck-plugin-public</id>
-            <url>http://nexus.citeck.ru/repository/maven-public</url>
+            <url>https://nexus.citeck.ru/repository/maven-public</url>
         </pluginRepository>
     </pluginRepositories>
 
