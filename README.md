@@ -32,8 +32,8 @@ We welcome contributions from the community to make ECOS even better. Everyone i
 
 ## Support
 
-If you need any assistance or have any questions regarding Citeck `ecos-meetings`, please create an issue in this repository or reach out to our [support team](mailto:support@citeck.ru).
+If you need any assistance or have any questions regarding Citeck `ecos-order-pass`, please create an issue in this repository or reach out to our [support team](mailto:support@citeck.ru).
 
 ## License
 
-Citeck `ecos-meetings` is released under the [GNU Lesser General Public License](LICENSE).
+Citeck `ecos-order-pass` is released under the [GNU Lesser General Public License](LICENSE).
