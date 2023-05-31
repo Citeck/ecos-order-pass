@@ -6,7 +6,7 @@ The module `ecos-order-pass` offers a user-friendly interface for creating and t
 
 ## Get started
 
-If you are new to ECOS platform and would like to load the software locally, we recommend you download the Dockerized version from [Demo repository](https://github.com/Citeck/ecos-community-demo).
+If you are new to ECOS platform and would like to run the software locally, we recommend you download the Dockerized version from [Demo repository](https://github.com/Citeck/ecos-community-demo).
 
 ### Recommended versions of services to launch with:
 
