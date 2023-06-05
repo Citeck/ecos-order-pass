@@ -7,25 +7,25 @@
 
     <groupId>ru.citeck.ecos.eapps.order-pass</groupId>
     <artifactId>ecos-order-pass</artifactId>
-    <version>1.0.1</version>
+    <version>1.1.0</version>
 
     <parent>
         <groupId>ru.citeck.ecos.eapps.project</groupId>
         <artifactId>ecos-apps-simple-parent</artifactId>
-        <version>1.0.1</version>
+        <version>1.0.3</version>
     </parent>
 
     <repositories>
         <repository>
             <id>citeck-public</id>
-            <url>http://nexus.citeck.ru/repository/maven-public</url>
+            <url>https://nexus.citeck.ru/repository/maven-public</url>
         </repository>
     </repositories>
 
     <pluginRepositories>
         <pluginRepository>
             <id>citeck-plugin-public</id>
-            <url>http://nexus.citeck.ru/repository/maven-public</url>
+            <url>https://nexus.citeck.ru/repository/maven-public</url>
         </pluginRepository>
     </pluginRepositories>
 

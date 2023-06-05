@@ -3,105 +3,105 @@
   "typeRef": "emodel/type@order-pass",
   "permissions": {
     "matrix": {
-      "clerk": {
-        "order_pass": "READ",
-        "order_confirmed": "READ",
-        "order_rejected": "READ"
-      },
       "initiator": {
-        "order_pass": "WRITE",
-        "order_confirmed": "READ",
-        "order_rejected": "READ"
+        "passOrdering": "READ",
+        "passConfirmed": "READ",
+        "passRejected": "READ"
+      },
+      "clerks": {
+        "passOrdering": "READ",
+        "passConfirmed": "READ",
+        "passRejected": "READ"
       }
     }
   },
   "attributes": {
     "visitorFullName": {
       "matrix": {
-        "clerk": {
-          "order_pass": "READ",
-          "order_confirmed": "READ",
-          "order_rejected": "READ"
-        },
         "initiator": {
-          "order_pass": "WRITE",
-          "order_confirmed": "READ",
-          "order_rejected": "READ"
+          "passOrdering": "READ",
+          "passConfirmed": "READ",
+          "passRejected": "READ"
+        },
+        "clerks": {
+          "passOrdering": "READ",
+          "passConfirmed": "READ",
+          "passRejected": "READ"
         }
       },
       "rules": []
     },
     "visitorOrganization": {
       "matrix": {
-        "clerk": {
-          "order_pass": "READ",
-          "order_confirmed": "READ",
-          "order_rejected": "READ"
-        },
         "initiator": {
-          "order_pass": "WRITE",
-          "order_confirmed": "READ",
-          "order_rejected": "READ"
+          "passOrdering": "READ",
+          "passConfirmed": "READ",
+          "passRejected": "READ"
+        },
+        "clerks": {
+          "passOrdering": "READ",
+          "passConfirmed": "READ",
+          "passRejected": "READ"
         }
       },
       "rules": []
     },
     "visitingDate": {
       "matrix": {
-        "clerk": {
-          "order_pass": "READ",
-          "order_confirmed": "READ",
-          "order_rejected": "READ"
-        },
         "initiator": {
-          "order_pass": "WRITE",
-          "order_confirmed": "READ",
-          "order_rejected": "READ"
+          "passOrdering": "READ",
+          "passConfirmed": "READ",
+          "passRejected": "READ"
+        },
+        "clerks": {
+          "passOrdering": "READ",
+          "passConfirmed": "READ",
+          "passRejected": "READ"
         }
       },
       "rules": []
     },
     "carBrandAndNumber": {
       "matrix": {
-        "clerk": {
-          "order_pass": "READ",
-          "order_confirmed": "READ",
-          "order_rejected": "READ"
-        },
         "initiator": {
-          "order_pass": "WRITE",
-          "order_confirmed": "READ",
-          "order_rejected": "READ"
+          "passOrdering": "READ",
+          "passConfirmed": "READ",
+          "passRejected": "READ"
+        },
+        "clerks": {
+          "passOrdering": "READ",
+          "passConfirmed": "READ",
+          "passRejected": "READ"
         }
       },
       "rules": []
     },
     "visitorDocument": {
       "matrix": {
-        "clerk": {
-          "order_pass": "READ",
-          "order_confirmed": "READ",
-          "order_rejected": "READ"
-        },
         "initiator": {
-          "order_pass": "WRITE",
-          "order_confirmed": "READ",
-          "order_rejected": "READ"
+          "passOrdering": "READ",
+          "passConfirmed": "READ",
+          "passRejected": "READ"
+        },
+        "clerks": {
+          "passOrdering": "READ",
+          "passConfirmed": "READ",
+          "passRejected": "READ"
         }
       },
       "rules": []
     },
     "initiatorDepartment": {
       "matrix": {
-        "clerk": {
-          "order_pass": "READ",
-          "order_confirmed": "READ",
-          "order_rejected": "READ"
-        },
         "initiator": {
-          "order_pass": "WRITE",
-          "order_confirmed": "READ",
-          "order_rejected": "READ"
+          "passOrdering": "READ",
+          "passConfirmed": "READ",
+          "passRejected": "READ"
+        },
+        "clerks": {
+          "passOrdering": "READ",
+          "passConfirmed": "READ",
+          "passRejected": "READ"
         }
       },
       "rules": []

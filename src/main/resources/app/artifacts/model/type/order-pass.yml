@@ -3,41 +3,42 @@ id: order-pass
 name:
   ru: Пропуск
   en: Order Pass
-sourceType: ECOS_MODEL
+storageType: ECOS_MODEL
 parentRef: emodel/type@case
 formRef: uiserv/form@order-pass-form
 journalRef: uiserv/journal@order-passes
+inheritForm: false
 dispNameTemplate:
   ru: Пропуск №${regNumber}
-  en: Order №${regNumber}
+  en: Pass №${regNumber}
 defaultCreateVariant: true
 model:
   roles:
-    - id: clerk
-      name:
-        ru: Делопроизводитель
-        en: Clerk
-      assignees:
-        - GROUP__orgstruct_home_
     - id: initiator
       name:
         ru: Инициатор
         en: Initiator
       attributes:
         - initiator
+    - id: clerks
+      name:
+        ru: Делопроизводители
+        en: Clerks
+      assignees:
+        - GROUP__orgstruct_home_
   statuses:
-    - id: order_pass
+    - id: passOrdering
       name:
         ru: Заказ пропуска
-        en: Order pass
-    - id: order_confirmed
+        en: Pass ordering
+    - id: passConfirmed
       name:
         ru: Пропуск заказан
-        en: Confirmed
-    - id: order_rejected
+        en: Pass confirmed
+    - id: passRejected
       name:
         ru: В пропуске отказано
-        en: Rejected
+        en: Pass rejected
   attributes:
     - id: visitorFullName
       name:

@@ -1,0 +1,19 @@
+{
+  "id" : "order-pass-clerks-notification",
+  "name" : "Order Pass Clerks Notification",
+  "notificationTitle" : {
+    "ru" : "Новая задача: Оформление пропуска, документ - ${title}",
+    "en" : "New task: Pass ordering, document - ${title}"
+  },
+  "tags" : [ ],
+  "model" : {
+    "date" : "$now?str",
+    "sender" : "initiator?id",
+    "senderFirstName" : "initiator.firstName?str",
+    "senderLastName" : "initiator.lastName?str",
+    "documentId" : "?id",
+    "web_url" : "?disp",
+    "title" : "?disp"
+  },
+  "multiTemplateConfig" : [ ]
+}
