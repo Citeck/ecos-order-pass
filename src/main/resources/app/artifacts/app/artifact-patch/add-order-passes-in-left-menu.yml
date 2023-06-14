@@ -1,0 +1,47 @@
+id: add-order-passes-in-left-menu
+name: {ru: Добавить раздел "Пропуска", en: Add section "Order passes" }
+
+target: 'ui/menu$default-menu-v1'
+
+type: json
+config:
+  operations:
+    - op: add
+      path: '$..[?(@.id == "sections")].items'
+      value: {
+        "id": "order-passes-section",
+        "label": {
+          "ru": "Пропуска",
+          "en": "Order passes"
+        },
+        "icon": "ui/icon@i-leftmenu-pass",
+        "hidden": false,
+        "type": "SECTION",
+        "config": {},
+        "action": {
+          "type": "",
+          "config": {}
+        },
+        "items": [
+          {
+            "id": "272aa970-c181-447e-b565-1a8a9294d2be",
+            "label": {
+              "ru": "Пропуска",
+              "en": "Order passes"
+            },
+            "icon": "",
+            "hidden": false,
+            "type": "JOURNAL",
+            "config": {
+              "recordRef": "uiserv/journal@order-passes"
+            },
+            "action": {
+              "type": "",
+              "config": {}
+            },
+            "items": [],
+            "allowedFor": []
+          }
+        ],
+        "allowedFor": []
+      }
