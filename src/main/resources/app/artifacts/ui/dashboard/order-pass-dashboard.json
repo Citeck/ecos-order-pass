@@ -3,6 +3,7 @@
   "typeRef": "emodel/type@order-pass",
   "appliedToRef": "",
   "authority": null,
+  "scope": "",
   "priority": 0,
   "config": {
     "version": "v2",
@@ -161,18 +162,14 @@
               "elementsDisplayCondition": {},
               "types": [
                 {
-                  "formId": null,
-                  "multiple": false,
-                  "type": "emodel/type@category-document-type/kind-d-scan-documents",
-                  "mandatory": false
-                },
-                {
-                  "formId": null,
-                  "multiple": false,
-                  "type": "emodel/type@category-document-type/kind-d-counterparty-documents",
-                  "mandatory": false
+                  "type": "emodel/type@attachment",
+                  "multiple": true,
+                  "mandatory": false,
+                  "canUpload": true,
+                  "journalId": ""
                 }
-              ]
+              ],
+              "isLoadChecklist": true
             }
           },
           "description": "Документы"
