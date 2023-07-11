@@ -4,14 +4,14 @@
   "permissions": {
     "matrix": {
       "initiator": {
-        "passOrdering": "READ",
-        "passConfirmed": "READ",
-        "passRejected": "READ"
+        "passOrdering": "WRITE",
+        "passConfirmed": "WRITE",
+        "passRejected": "WRITE"
       },
       "clerks": {
-        "passOrdering": "READ",
-        "passConfirmed": "READ",
-        "passRejected": "READ"
+        "passOrdering": "WRITE",
+        "passConfirmed": "WRITE",
+        "passRejected": "WRITE"
       }
     }
   },
